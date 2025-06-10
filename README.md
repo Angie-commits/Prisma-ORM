@@ -51,18 +51,6 @@ Models represent tables in the database and consist of fields corresponding to c
 - *Relations*
 - *Attributes* (e.g., @id, @default)
 
-#### Example Model Definition
-prisma
-model Product {
-  id                 Int    @id @default(autoincrement())
-  productTitle       String @map("product_title")
-  productDescription String @map("product_description")
-  productCost        Float  @map("product_cost")
-  unitsLeft          Int    @map("units_left")
-  @@map("products_table")
-}
-
-
 ## Migrations
 Manage changes to your database schema using migrations. Create a migration after modifying your schema.prisma file:
 ```bash
