@@ -1,4 +1,4 @@
-# Prisma ORM Summarization
+# Prisma ORM Summary
 
 Prisma is a modern Object-Relational Mapping (ORM) tool designed for Node.js and TypeScript, enabling developers to interact with databases through an object-oriented approach.
 
@@ -77,8 +77,3 @@ Prisma supports defining relationships between models:
 - *One-to-One*: One record in one table corresponds to one record in another.
 - *One-to-Many*: One record in one table corresponds to multiple records in another.
 - *Many-to-Many*: Multiple records in one table correspond to multiple records in another.
-
-### Example One-to-One Relationship
-
-
-### Example One-to-Many Relationship
