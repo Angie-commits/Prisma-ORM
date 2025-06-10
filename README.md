@@ -79,39 +79,6 @@ Prisma supports defining relationships between models:
 - *Many-to-Many*: Multiple records in one table correspond to multiple records in another.
 
 ### Example One-to-One Relationship
-prisma
-model Author {
-  id           String   @id @default(uuid())
-  firstName    String
-  lastName     String
-  emailAddress String
-  profile      Profile?
-}
-
-model Profile {
-  avatarUrl String
-  gender    String
-  age       Int
-  authorId  String @unique
-  author    Author @relation(fields: [authorId], references: [id])
-}
 
 
 ### Example One-to-Many Relationship
-prisma
-model Author {
-  id           String @id @default(uuid())
-  firstName    String
-  lastName     String
-  emailAddress String
-  books        Book[]
-}
-
-model Book {
-  id       String @id @default(uuid())
-  title    String
-  synopsis String
-  genre    String
-  authorId String
-  author   Author @relation(fields: [authorId], references: [id], onDelete: Cascade)
-}
